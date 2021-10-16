@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'nunito';
+  color: white;
+  background-color: #dee2ff;
+  line-height: 1.4;
+  width: 100%;
+}
+
+/* START NAV BAR */
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  
+  height: 30px;
+  padding: 25px 0px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #e6e6e6;
+  opacity: 0.7;
+  
+  
+  z-index: 5;
+  
+}
+
+header a{
+  margin-right: 2rem;
+  color: gray;
+  
+  text-decoration: none;
+  z-index: 5;
+}
+header img{
+  border-radius: 50%;
+}
+
+header a:hover{
+  margin-right: 2rem;
+  color: black;
+  
+  text-decoration: underline;
+  z-index: 5;
+}
+
+header h3{
+  margin-right: 2rem;
+  color: black;
+  
+  text-decoration: none;
+}
+
+/* END NAV BAR */
+
+
+/* START BACKGROUND IMAGES */
+.background_grid {
+  display: grid;
+  
+  justify-content: center;
+  align-items: center;
+  
+  grid-template-columns: 100%;
+  grid-gap: 0px;
+  
+  width: 100%;
+  height: auto;
+  
+  z-index: -2;
+}
+
+#background1 {
+  grid-column: 1;
+  grid-row: 1;
+  
+  z-index: -1;
+}
+
+#background2 {
+  grid-column: 1;
+  grid-row: 2;
+
+  z-index: -1;
+}
+
+#background3 {
+  grid-column: 1;
+  grid-row: 3;
+  
+  z-index: -1; 
+}
+
+#background4 {
+  grid-column: 1;
+  grid-row: 4;
+  
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.background_stretch {
+ width:100%;
+ height:auto;
+}
+/* END BACKGROUND IMAGES */
+
+
+
+
+/* START WELCOME-SECTION */
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  
+  position: absolute;
+  top: 10vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+#welcome-section h1{
+  text-align: left;  
+  font-size: 3vw;
+  color: white;
+  
+  position: absolute;
+  top: 5vw;
+  left: 7vw;
+}
+
+#welcome-section h2{
+  text-align: left;  
+  font-size: 4vw;
+  color: white;
+  
+  position: absolute;
+  top: 10vw;
+  left: 7vw;
+  
+  border-bottom: 1px  black; 
+  padding-bottom: 3px;
+  border-bottom-width: 1px; 
+  
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+/* END WELCOME-SECTION */
+
+
+
+/* START PROJECT-SECTION */
+#projects {
+  width: 100%;
+  height: auto;
+  
+  position: absolute;
+  top: 46vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+#projects h3{
+  text-align: left;  
+  font-size: 3vw;
+  color: white;
+  
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  
+  border-bottom: 1px solid #d8e2dc; 
+  border-bottom-width: 1px; 
+  
+  word-spacing: 4px;
+  letter-spacing: 3px;
+}
+
+#projectsbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  top: 44vw;
+  left: 2vw;
+  
+  width: 100%;
+  height: auto;
+
+  font-size: 2vw;
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+#projectsbar a{
+  margin-right: 11vw;
+  margin-left: 11vw;
+  color: silver;
+  
+  text-decoration: none;
+  z-index: 2;
+}
+
+#projectsbar a:hover{
+  margin-right: 11vw;
+  margin-left: 11vw;
+  color: #40e0d0;
+  
+  font-weight: bold;
+  z-index: 2;
+}
+/* END PROJECT-SECTION */
+
+
+
+/* START CONTACT-SECTION */
+
+#contact {
+  width: 75%;
+  height: auto;
+  
+  position: absolute;
+  top: 98vw;
+  left: 22vw;
+  z-index: 2;
+}
+
+
+#contact h3{
+  text-align: left;  
+  font-size: 3vw;
+  color: white;
+  
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  
+  border-bottom: 1px solid gray; 
+  border-bottom-width: 1px; 
+  
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+
+#contact h6 {
+  text-align: left;  
+  font-size: 1.5vw;
+  color: silver;
+  flex-wrap: wrap;
+  
+  position: absolute;
+  top: 10vw;
+  left: 3vw;
+  
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  
+  border-bottom: 1px solid dimgray; 
+  padding-bottom: 5vw;
+}
+
+#layla_Instagram {
+  width: 5vw;
+  text-align: left;  
+  
+  position: absolute;
+  top: 43vw;
+  left: 9vw;
+  
+  opacity: 0.85;
+  z-index; 3;
+}
+
+#layla_CodePen {
+  width: 5vw;
+  text-align: left;  
+  
+  position: absolute;
+  top: 43vw;
+  left: 15vw;
+  
+  opacity: 0.85;
+  z-index; 3;
+}
+
+#layla_GitHub {
+  width: 5vw;
+  text-align: left;  
+  
+  position: absolute;
+  top: 43vw;
+  left: 21vw;
+  
+  opacity: 0.85;
+  z-index; 3;
+}
+
+
+/* END CONTACT-SECTION */
+
+/* START FOR MOBILE PHONES */
+@media only screen and (max-width: 800px) 
+{
+    header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+    height: 2vw;
+    padding: 25px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #e5e5e5;
+    opacity: 0.7;
+
+    z-index: 5;
+    font-size: 2vw;
+  }
+  
+  #logo {
+  width: 12vw;
+  }
+
+#welcome-section h2{
+  font-size: 3.5vw;
+}
+
+
+  /* END FOR MOBILE PHONES */
