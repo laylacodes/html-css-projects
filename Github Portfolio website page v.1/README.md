@@ -1,3 +1,1 @@
-# my portfolio page!
-# it's a WIP 🚧 
-currently on v.1
+# v.1 of my current github.io website
